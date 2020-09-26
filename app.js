@@ -39,9 +39,6 @@ app.post("/", function (req, res) {
     };
     const Request = https.request(url, options, function (response) {
         response.on("data", function (data) {
-
-
-
         });
         if (response.statusCode === 200) {
             res.sendFile(__dirname + "/success.html");
